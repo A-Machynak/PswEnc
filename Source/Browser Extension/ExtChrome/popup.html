@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="OpenSans.css" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <script type="text/javascript" src="popup.js"></script>
+        <title>Popup</title>
+    </head>
+    <body>
+        <h1 class="demo"></h1>
+        <div class="content">
+            <div class="header">
+                <img src="icons/icon_128.png" class="logoImg">
+                <h1 class="logo">Password decrypt</h1>
+            </div>
+            <hr />
+            <div class="container" style="min-height: 80px;">
+                <img src="icons/icon_key.png" class="contentImg">
+                <div class="content-text" id="cnt-txt">Enter your master key
+                    <div class="help-box">
+                        <img src="icons/icon_qm2.png" class="help-img">
+                        <span class="help-boxtext">
+                            Master key from your desktop app
+                        </span>
+                    </div>
+                </div>
+                <!-- Open source pure CSS loader - loading.io/css -->
+                <div class="lds-default" id="loading"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                <div id="formpsw">
+                    <input type="password" id="setMk" name="master" placeholder="Master Key">
+                    <input type="submit" id="setBtn" value="Set">
+                </div>
+                <div class="content-psw">
+                    <button id="btn">Show password</button>
+                    <div id="pswfield"> - </div>
+                </div>
+            </div>
+            <hr />
+            <div class="container">
+                <img src="icons/icon_www.png" class="contentImg">
+                <div class="content-text">Webpage  
+                    <div class="help-box">
+                        <img src="icons/icon_qm2.png" class="help-img">
+                        <span class="help-boxtext">
+                            Which page the password belongs to
+                        </span>
+                    </div>
+                    <div id="content-web">
+                        -
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
